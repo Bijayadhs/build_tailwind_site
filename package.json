@@ -1,0 +1,32 @@
+{
+  "name": "build_tailwind_site",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bijayadhs/build_tailwind_site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bijayadhs/build_tailwind_site/issues"
+  },
+  "homepage": "https://github.com/Bijayadhs/build_tailwind_site#readme",
+  "dependencies": {
+    "tailwindcss": "^1.8.8"
+  },
+  "devDependencies": {
+    "parcel-bundler": "latest",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "postcss-modules": "latest",
+    "autoprefixer": "^9.8.6"
+  }
+}
