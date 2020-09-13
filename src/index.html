@@ -1,14 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Website</title>
 </head>
-<body class="min-h-screen flex justify-center items-center">
-    <h1 class="text-5xl text-center text-orange-700 bg-purple-300">My tailwind website</h1>
+
+<body>
+    <!--=================================================-->
+    <!-- header/navigation =================================================-->
+    <!--=================================================-->
+    <div class="header bg-blue-100 text-gray-600">
+        <div class="container mx-auto px-6 lg:px-8 py-4 flex justify-between">
+            <!-- left header section -->
+            <div class="space-x-4 flex items-center">
+                <a class="font-bold text-2xl text-teal-800" href="#">Beginner Tailwind</a>
+                <a class="hidden lg:inline-block hover:text-gray-900" href="#">About</a>
+                <a class="hidden lg:inline-block hover:text-gray-900" href="#">What You'll Learn</a>
+                <a class="hidden lg:inline-block hover:text-gray-900" href="#">Pricing</a>
+                <a class="hidden lg:inline-block hover:text-gray-900" href="#">FAQ</a>
+            </div>
+
+            <!-- right header section -->
+            <div class="flex items-center space-x-4">
+                <a class="hover:text-gray-900" href="#">Login</a>
+                <a class="lg:hidden inline-block text-purple-600 hover:text-purple-700 bg-purple-300 hover:bg-purple-400 py-1 px-3 rounded shadow hover:shadow-xl transition duration-500"
+                    href="#">Get the
+                    Course</a>
+            </div>
+        </div>
+    </div>
+    <!--=================================================-->
+    <!-- hero =================================================-->
+    <!--=================================================-->
+    <div class="z-10">
+        <div class="container mx-auto px-6 lg:px-8 text-center py-24">
+            <!-- heading -->
+            <h1 class="mb-2 text-6xl font-extrabold">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300  to-teal-500">Beginner</span>
+                <span
+                    class="bg-clip-text text-transparent bg-gradient-to-r from-teal-600 via-purple-500 to-purple-600">Tailwind</span>
+            </h1>
+            <!-- parragraph -->
+            <p class="mb-4 text-2xl text-gray-600">Make good looking designs quickly. All without a single line of
+                custom
+                CSS.</p>
+
+            <!-- Button Call to action -->
+            <a class="inline-block mb-32 text-lg font-bold  rounded-lg shadow-lg hover:shadow-2xl bg-purple-500 hover:bg-purple-600 text-purple-100 hover:text-white py-3 px-12 transition duration-500 bg-gradient-to-br from-purple-300 to-purple-700 hover:to-purple-600"
+                href="#">Get the
+                Course</a>
+            <!-- teaser image -->
+            <div class="relative">
+                <img class="border-4 border-purple-400 rounded-lg shadow-2xl" src="https://i.imgur.com/wysbBMS.png"
+                    alt="Teaser Image">
+                <!-- teaser image info box -->
+                <div
+                    class="px-8 y-4 text-sm absolute top-0 right-0 transform translate-x-4 -translate-y-4 border-t-4 border-yellow-500 rounded shadow-lg bg-yellow-100">
+                    <p><strong class="text-yellow-800 font-bold">We'll create BeginnerTailwind.com</strong><span
+                            class="text-yellow-600 opacity-50">(it's the
+                            site you're on now)</span></p>
+                    <p class="text-yellow-700">We'll do it all without a single line of custom CSS!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=================================================-->
+    <!-- overview =================================================-->
+    <!--=================================================-->
+
+    <div class="-mt-64 bg-purple-700">
+        <div class=" container mx-auto px-8 py-64">
+
+            <h1 class="pb-8 font-bold text-5xl text-purple-100">Writing CSS is tough stuff!</h1>
+
+            <!-- left -->
+            <div class="flex">
+                <div class="p-12 space-y-4 bg-white rounded shadow-lg text-gray-700 leading-relaxed">
+                    <p>Tailwind makes writing CSS easier and lets us customize our designs faster than any other CSS
+                        framework. If you want a CSS framework that has pre-built components, then Tailwind may not be
+                        for you. If you want a CSS framework that lets you design quickly and customize your site, then
+                        <span class="text-teal-500 font-bold"> Tailwind is gonna be a lot of fun.</span></p>
+                    <p>After using Bulma to build <span class="text-blue-600 text-lg">Scotch.io</span>, my CSS files
+                        became littered with my own <span
+                            class="px-1 text-xs rounded bg-gray-300 text-green-900">!important</span> classes to
+                        override
+                        the framework's styles. Tailwind
+                        doesn't have the <span class="px-1 text-xs rounded bg-gray-300 text-green-900">!important</span>
+                        problem since all our elements are designed on the fly.
+                    </p>
+                    <p><span class="font-bold text-gray-800">Important Note:</span> Tailwind lets us design quickly, but
+                        this doesn't mean that you don't
+                        need CSS
+                        knowledge however. To use Tailwind, you need to have a good understanding of CSS
+                        properties. In
+                        this
+                        course, <span class="font-bold text-gray-800">we will learn Tailwind and we'll also learn CSS
+                            concepts</span> to create good looking
+                        designs.
+                        <span class="font-bold text-gray-800">Tailwind is the ultimate CSS shorthand</span>, but we
+                        still need to learn the CSS, which we'll
+                        do in
+                        this
+                        course.
+                    </p>
+                    <div class="absolute text-purple-300 text-6xl transform -translate-y-8 -translate-x-6 ">"</div>
+                    <p class="relative italic text-2xl text-gray-700">This isn' t just a Tailwind course. This is also a
+                        "learn
+                        how to design
+                        with CSS"
+                        course. </p>
+                    <p>The hardest things about learning Tailwind is memorizing the classes and also knowing
+                        which
+                        classes
+                        go well together. We'll be writing a lot of Tailwind in this course so that the
+                        repetition will
+                        help
+                        us commit Tailwind classes to memory.
+
+                    </p>
+                </div>
+
+                <!-- right -->
+                <div class="space-y-4">
+                    <p class="w-64 p-8 ml-12  italic text-purple-200 bg-purple-800 rounded-lg">What classes should I
+                        use?</p>
+                    <p class="w-64 p-8 ml-12  italic text-purple-200 bg-purple-800 rounded-lg">How do I make things look
+                        good?</p>
+                    <p class="w-64 p-8 ml-12  italic text-purple-200 bg-purple-800 rounded-lg">My design looks basic?
+                    </p>
+                    <p class="w-64 p-8 ml-12  italic text-purple-200 bg-purple-800 rounded-lg">How do I do responsive?
+                    </p>
+                    <p class="w-64 p-8 ml-12  italic text-purple-200 bg-purple-800 rounded-lg">Why does my typography
+                        look so bad?</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--=================================================-->
+    <!-- about me =================================================-->
+    <!--=================================================-->
+
+    <!--=================================================-->
+    <!-- what you will learn =================================================-->
+    <!--=================================================-->
+
+    <!--=================================================-->
+    <!-- pricing =================================================-->
+    <!--=================================================-->
+
+    <!--=================================================-->
+    <!-- faq =================================================-->
+    <!--=================================================-->
+
+    <!--=================================================-->
+    <!-- footer/newsletter =================================================-->
+    <!--=================================================-->
 
     <script src="index.js"></script>
-    
+
 </body>
+
 </html>
